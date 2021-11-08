@@ -1,0 +1,10 @@
+services:
+  discovery-backend:
+    build:
+      context: .
+    environment:
+      - CLIN_API_URL
+      - GT_API_URL
+    ports:
+      - 5002:3003
+    restart: always
